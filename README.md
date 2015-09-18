@@ -16,8 +16,8 @@ $ wtc commit -a
 3) [no message]
 4) Corrected mistakes
 5) marks
-#? 3
-[master bff7fac] [no message]
+#? 4
+[master bff7fac] Corrected mistakes
  1 file changed, 27 insertions(+), 3 deletions(-)
  rewrite wtc (85%)
 $
