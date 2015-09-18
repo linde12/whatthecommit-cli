@@ -27,4 +27,4 @@ $ echo 'export PATH=$PATH:/path/to/wtc'  >> ~/.bash_profile
 License
 ----
 
-M
+MIT
