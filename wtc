@@ -1,3 +1,27 @@
 #!/bin/sh
-echo $(curl -Ss http://whatthecommit.com/index.txt)
-exit 0
+args=$@
+url="http://whatthecommit.com/index.txt"
+chooseCommit () {
+    local index=0
+    local msgs=()
+    while [ "$index" -lt "$1" ]; do
+        msgs+=("$(curl -Ss $url)")
+        let index=index+1
+    done
+
+    select msg in "${msgs[@]}"; do
+        eval "git $args -m \"$msg\""
+        exit $?
+    done
+}
+
+case "$1" in
+    "commit")
+        chooseCommit 5;;
+    "-h")
+        echo $"Usage: $0 [commit]"
+        exit 0;;
+    *)
+        echo $(curl -Ss $url)
+        exit 0;;
+esac
