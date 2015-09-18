@@ -1,4 +1,3 @@
 #!/bin/sh
-res=$(curl -Ss http://whatthecommit.com)
-echo $res | grep -o -P '(?<=\<p>).*(?=\<\/p>\s\<p)' | xargs
+echo $(curl -Ss http://whatthecommit.com/index.txt)
 exit 0
