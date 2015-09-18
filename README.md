@@ -2,6 +2,12 @@
 
 whatthecommit-cli, or wtc, grabs a random commit message from http://whatthecommit.com and outputs it in the terminal
 
+### Usage
+
+```sh
+$ git commit -m "$(wtc)"
+```
+
 ### Installation
 If you want `wtc` to be reachable from anywhere make sure to include it in your PATH variable.
 
@@ -21,4 +27,4 @@ $ echo 'export PATH=$PATH:/path/to/wtc'  >> ~/.bash_profile
 License
 ----
 
-MIT
+M
