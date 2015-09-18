@@ -11,13 +11,13 @@ $
 $ wtc -h
 Usage: /path/to/wtc [commit]
 $ wtc commit -a
-1) -m \'So I hear you like commits ...\'
-2) woa!! this one was really HARD!
-3) [no message]
-4) Corrected mistakes
-5) marks
-#? 4
-[master bff7fac] Corrected mistakes
+1) herpderp
+2) typo
+3) I can't believe it took so long to fix this.
+4) ALL SORTS OF THINGS
+5) more debug... who overwrote!
+#? 2
+[master bff7fac] typo
  1 file changed, 27 insertions(+), 3 deletions(-)
  rewrite wtc (85%)
 $
